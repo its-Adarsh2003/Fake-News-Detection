@@ -108,5 +108,5 @@ Read the guide on fake news and verification.
 This project is for educational and research purposes only.
 Predictions may be incorrect; always verify critical news with multiple trusted sources.
 
-text
+
 
