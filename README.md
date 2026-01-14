@@ -50,7 +50,7 @@ Exact values are stored in `results/model_results.json` and visualized in the **
 
 Dataset CSVs (`Fake.csv`, `True.csv`) are not committed to Git; download them manually and place as:
 
-```Text
+```text
 data/News_dataset/Fake.csv
 data/News_dataset/True.csv
 
