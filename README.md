@@ -2,7 +2,7 @@
 
 AI‑powered news authentication system that classifies news articles as **Real** or **Fake** using TF‑IDF features and multiple machine learning models (Random Forest, Logistic Regression, Linear SVM), exposed through an interactive Streamlit app.
 
-> 🔴 Live demo: **[Try it here →](https://its-adarsh2003-fake-news-detection.streamlit.app)**
+> 🔴 Live demo: **[Try it here →](https://ai-fakenews-detector.streamlit.app/)**
 
 ![Detect Tab](screenshots/detect_tab.png)
 ![Statistics Tab](screenshots/statistics_tab.png)
