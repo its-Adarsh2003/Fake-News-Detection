@@ -177,7 +177,7 @@ Test with sample articles.
 Read the guide on fake news and verification.
 
 ---
-
+```
 ⚠️ Important Disclaimer
 This project is for educational and research purposes only.
 
@@ -197,8 +197,7 @@ Official statements, videos, interviews, and metadata
 
 Treat this app as a signal generator, not an ultimate truth detector. Always verify critical news with multiple reliable sources.
 
- Author
-Adarsh Dubey
+Author:Adarsh Dubey
 CSE (AI & ML) undergrad | Building practical ML/NLP apps and data products.
 
 Feedback, issues and suggestions are always welcome.
