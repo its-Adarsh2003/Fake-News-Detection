@@ -108,5 +108,11 @@ Read the guide on fake news and verification.
 This project is for educational and research purposes only.
 Predictions may be incorrect; always verify critical news with multiple trusted sources.
 
-text
+
+Iske baad:
+
+```bash
+git add README.md
+git commit -m "Polished README with sections and tech stack"
+git push
 

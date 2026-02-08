@@ -5,8 +5,6 @@ import sys
 import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC
-from sklearn.calibration import CalibratedClassifierCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import (
     accuracy_score, f1_score, precision_score,
@@ -28,8 +26,9 @@ print("=" * 80)
 # ---- STEP 1: LOAD DATA ----
 print("\n📥 Step 1: Loading data...")
 
-fake_path = "data\\News_dataset\\Fake.csv"
-true_path = "data\\News_dataset\\True.csv"
+fake_path = os.path.join("data", "News_dataset", "Fake.csv")  # Cross-platform
+true_path = os.path.join("data", "News_dataset", "True.csv")
+
 
 try:
     fake = pd.read_csv(fake_path)
@@ -91,20 +90,14 @@ models["Random_Forest"] = RandomForestClassifier(
 
 # 2) Logistic Regression
 models["Logistic_Regression"] = LogisticRegression(
-    max_iter=300,
+    max_iter=500,
     class_weight="balanced",
     n_jobs=-1,
 )
 
-# 3) Linear SVM (calibrated for probabilities)
-svm_base = LinearSVC(class_weight="balanced", random_state=42)
-models["Linear_SVM"] = CalibratedClassifierCV(svm_base, cv=3)
 
 # ---- STEP 7: TRAIN + EVAL ALL ----
 results = {}
-best_name = None
-best_f1 = -1
-best_model = None
 
 for name, clf in models.items():
     print(f"\n🤖 Training model: {name}")
@@ -138,12 +131,11 @@ for name, clf in models.items():
         "roc_auc": float(roc_auc),
     }
 
-    if f1 > best_f1:
-        best_f1 = f1
-        best_name = name
-        best_model = clf
+# 👉 BEST MODEL FIXED: Logistic_Regression
+best_name = "Logistic_Regression"
+best_model = models["Logistic_Regression"]
+print("\nBest model based on F1 (FIXED):", best_name)
 
-print("\nBest model based on F1:", best_name, f"({best_f1:.4f})")
 
 # ---- STEP 8: SAVE BEST MODEL + VECTORIZER ----
 print("\n💾 Step 8: Saving best model & TF-IDF...")

@@ -28,3 +28,13 @@ class FeatureExtractor:
     def load_tfidf(self, path):
         with open(path, 'rb') as f:
             self.tfidf = pickle.load(f)
+    def get_feature_names(self):
+        """Return top important features"""
+        return self.tfidf.get_feature_names_out()
+
+    def save_feature_importance(self, path):
+        """Save feature names for analysis"""
+        names = self.get_feature_names()
+        with open(path, 'w') as f:
+            for name in names:
+                f.write(name + "\n")
