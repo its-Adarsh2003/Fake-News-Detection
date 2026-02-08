@@ -2,7 +2,10 @@
 
 AI‑powered news authentication system that classifies news articles as **Real** or **Fake** using TF‑IDF features and multiple machine learning models (Random Forest, Logistic Regression, Linear SVM), exposed through an interactive Streamlit app.
 
-> 🔴 Live demo: **[Try it here →](https://ai-fakenews-detector.streamlit.app/)**
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-fakenews-detector.streamlit.app/)
+
+**🌐 [Live App](https://ai-fakenews-detector.streamlit.app/)** | **💻 [Code](https://github.com/its-Adarsh2003/Fake-News-Detection)** | **📊 [Download Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)**
+
 
 ![Detect Tab](screenshots/detect_tab.png)
 ![Statistics Tab](screenshots/statistics_tab.png)
@@ -48,11 +51,14 @@ Exact values are stored in `results/model_results.json` and visualized in the **
 - **Labels:** Real (1) and Fake (0), roughly balanced  
 - **Source:** Kaggle Fake News / Fake vs True News dataset (linked in `data/README.md`).  
 
-Dataset CSVs (`Fake.csv`, `True.csv`) are not committed to Git; download them manually and place as:
+### 📥 Download Dataset
 
-```text
-data/News_dataset/Fake.csv
-data/News_dataset/True.csv
+The dataset is **not included** in this repo (large file size ~145 MB).  
+Download from **[Kaggle: Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)** and extract
+
+---
+
+> ⚠️ **Important:** Both CSV files must be in `data/News_dataset/` folder before running `train_pipeline.py`
 
 ---
 
@@ -116,10 +122,12 @@ This project is for educational and research purposes only.
 Predictions may be incorrect; always verify critical news with multiple trusted sources.
 
 ## 🚀 Future Improvements
-- Integrate transformer-based models (BERT / RoBERTa)
-- Add multilingual fake news detection
-- Improve explainability with SHAP / LIME
-- Deploy backend with FastAPI for scalability
+
+- **[Planned]** Transformer Models – Integrate BERT / RoBERTa for better contextual understanding
+- **[Planned]** Multilingual Detection – Extend support to Hindi, Spanish, French
+- **[Planned]** Explainability – Add SHAP / LIME to show which words influenced predictions
+- **[Planned]** FastAPI Backend – Deploy scalable REST API for mobile/external integrations
+- **[Planned]** Fact Verification – Integrate Snopes/Wikipedia fact-checking APIs
 
 
 
