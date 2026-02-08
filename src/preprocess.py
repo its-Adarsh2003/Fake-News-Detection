@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ADD THIS TO YOUR preprocess.py
 
 import re
@@ -60,7 +60,7 @@ class NewsPreprocessor:
         ]
         
         return ' '.join(tokens)
-=======
+
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -111,4 +111,4 @@ class NewsPreprocessor:
         ]
         
         return ' '.join(tokens)
->>>>>>> b164559df96dd1421870e8cf171011a885c3e65c
+        b164559df96dd1421870e8cf171011a885c3e65c

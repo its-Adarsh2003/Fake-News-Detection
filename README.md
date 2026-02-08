@@ -117,65 +117,9 @@ Test with sample articles.
 
 Read the guide on fake news and verification.
 
-## ⚠️ CRITICAL LIMITATIONS (Read This First!)
+⚠️ Disclaimer
+This project is for educational and research purposes only.
+Predictions may be incorrect; always verify critical news with multiple trusted sources.
 
-<<<<<<< HEAD
+text
 
-Iske baad:
-
-```bash
-git add README.md
-git commit -m "Polished README with sections and tech stack"
-git push
-=======
-**This is a "Pattern Detector" NOT a "Fact Checker"**
->>>>>>> b164559df96dd1421870e8cf171011a885c3e65c
-
-### What It Does ✅
-- Detects linguistic patterns in low-credibility writing
-- Flags clickbait, emotional manipulation, conspiracy language
-- Provides confidence scores based on training patterns
-
-### What It CANNOT Do ❌
-- Fact-check breaking news (outside training data)
-- Verify if claims are actually true
-- Understand real-world context
-- Detect sophisticated misinformation
-- Predict unprecedented events (like "Modi resignation")
-
-### Why? 
-Your model trained on 2023 data. In 2025, breaking news doesn't exist in that data. You can't predict what you haven't seen.
-
-### How to Use Correctly
-
-Step 1: Get ML prediction
-↓
-Step 2: Check confidence score
-- < 70% = Model uncertain → Need verification
-- 70-85% = Possible patterns found → Cross-check
-- > 85% = Strong pattern detected → Still verify
-↓
-Step 3: Cross-reference with:
-🔗 Snopes.com
-🔗 FactCheck.org
-🔗 Wikipedia
-🔗 Official Government Sources
-
-## 🚀 Future Improvements
-
-- **[Planned]** Transformer Models – Integrate BERT / RoBERTa for better contextual understanding
-- **[Planned]** Multilingual Detection – Extend support to Hindi, Spanish, French
-- **[Planned]** Explainability – Add SHAP / LIME to show which words influenced predictions
-- **[Planned]** FastAPI Backend – Deploy scalable REST API for mobile/external integrations
-- **[Planned]** Fact Verification – Integrate Snopes/Wikipedia fact-checking APIs
-
-
-
-👤 Author
-Adarsh – AI/ML Student | Data Science Enthusiast
-
-📧 Email: dubeyadarsh138@gmail.com
-
-💼 LinkedIn: linkedin.com/in/adarsh-dubey
-
-🐙 GitHub: @its-Adarsh2003

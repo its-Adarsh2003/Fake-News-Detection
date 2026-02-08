@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, 
     f1_score, roc_auc_score, confusion_matrix, classification_report
@@ -58,7 +58,7 @@ def get_feature_importance(model, feature_names, top_k=10):
         print(f"\n⭐ Top {top_k} Features:")
         for i, idx in enumerate(indices, 1):
             print(f"   {i}. {feature_names[idx]}: {importances[idx]:.4f}")
-=======
+
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, 
     f1_score, roc_auc_score, confusion_matrix, classification_report
@@ -118,4 +118,4 @@ def get_feature_importance(model, feature_names, top_k=10):
         print(f"\n⭐ Top {top_k} Features:")
         for i, idx in enumerate(indices, 1):
             print(f"   {i}. {feature_names[idx]}: {importances[idx]:.4f}")
->>>>>>> b164559df96dd1421870e8cf171011a885c3e65c
+        b164559df96dd1421870e8cf171011a885c3e65c
