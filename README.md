@@ -27,8 +27,8 @@ AI‑powered news authentication system that classifies news articles as **Real*
 | Model               | Accuracy | Precision | Recall | F1‑Score | ROC‑AUC |
 |---------------------|---------:|----------:|-------:|---------:|--------:|
 | Random_Forest       | 0.9959   | 0.9959    | 0.9959 | 0.9959   | 0.9998  |
-| Logistic_Regression | 0.99xx   | 0.99xx    | 0.99xx | 0.99xx   | 0.99xx  |
-| Linear_SVM          | 0.99xx   | 0.99xx    | 0.99xx | 0.99xx   | 0.99xx  |
+| Logistic_Regression | 0.9925   | 0.9927    | 0.9923 | 0.9925   | 0.9998  |
+| Linear_SVM          | 0.9918   | 0.9920    | 0.9916 | 0.9918   | 0.9997  |
 
 Exact values are stored in `results/model_results.json` and visualized in the **Statistics** tab of the app.
 
@@ -131,3 +131,11 @@ Predictions may be incorrect; always verify critical news with multiple trusted 
 
 
 
+👤 Author
+Adarsh – AI/ML Student | Data Science Enthusiast
+
+📧 Email: dubeyadarsh138@gmail.com
+
+💼 LinkedIn: linkedin.com/in/adarsh-dubey
+
+🐙 GitHub: @its-Adarsh2003
